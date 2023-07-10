@@ -3,4 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
+module.exports = {
+  outDir: 'build',
+};
+
+
 module.exports = nextConfig
