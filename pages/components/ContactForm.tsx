@@ -17,7 +17,7 @@ function ContactForm() {
     <div className="w-full sm:w-full md:w-3/4 lg:w-1/2 mt-16 mx-auto">
       <form 
         onSubmit={handleSubmit} 
-        action={`https://formspree.io/f/${contact.formId}`}
+        action="https://formspree.io/f/myyqypoq"
         method="post" 
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
       >

@@ -1,6 +1,7 @@
 import React from "react";
 import config from "../index.json";
 import Image from "next/image";
+import { Typography, Button } from '@mui/material';
 
 const Projects = () => {
   const projects = config.projects;

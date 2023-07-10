@@ -4,18 +4,26 @@
 			"title": "About",
 			"url": "http://www.example.com/about"
 		},
+    {
+			"title": "Photos",
+			"url": "http://www.example.com/photos"
+		},
 		{
 			"title": "Projects",
 			"url": "http://www.example.com/portfolio"
 		},
 		{
+			"title": "Skills",
+			"url": "http://www.example.com/skills"
+		},
+    {
 			"title": "Contact",
 			"url": "http://www.example.com/contact"
 		}
 	],
   "hero": {
-    "name": "Your Name",
-    "subtitle": "I'm the Unknown Developer."
+    "name": "Yui Chen",
+    "subtitle": "I'm a front-end Developer."
   },
   "about": {
     "title": "About me",
@@ -27,25 +35,18 @@
     "title": "Projects",
     "projects": [
       {
-        "title": "Project 1",
-        "description": "Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: complement the information: the skills learned or reinforced in its realization and how you faced it, prove to be proactive in the search for solutions.",
-        "url": "http://www.example.com/project1",
-        "github": "http://www.example.com/github",
-        "image": "/placeholder-700x350.png"
+        "title": "Simple twitter",
+        "description": "Simple Twitter is a collaborative project where I worked on the frontend using React and SCSS. It involved building a user-friendly registration and login system, allowing users to tweet and explore others' tweets. I implemented features like profile customization, including avatar uploads. The project required extensive API integration for seamless communication with the backend. .",
+        "url": "https://yuichen0207.github.io/Simple-Twitter",
+        "github": "https://github.com/YuiChen0207/Simple-Twitter",
+        "image": "/simple-twitter.png"
       },
       {
-				"title": "Project 2",
-				"description": "Demonstrate in this description the skills of a programmer: such as having commitment, having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.",
-				"url": "http://www.example.com/project2",
-        "github": "http://www.example.com/github",
-				"image": "/placeholder-700x350.png"
-			},
-      {
-				"title": "Project 3",
-				"description": "If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.",
-				"url": "http://www.example.com/project3",
-        "github": "http://www.example.com/github",
-				"image": "/placeholder-700x350.png"
+				"title": "CRWN-clothing",
+				"description": "CRWN-clothing is a captivating e-commerce project built with React, SCSS, and Firebase. I have developed a responsive and interactive user interface that enhances the shopping experience. It offers a wide range of clothing, allowing users to browse and add items to their cart. and users can securely log in using their Google accounts. With the integration of Firebase, CRWN-clothing provides authentication, real-time database functionality.",
+				"url": "https://yuichen0207.github.io/crwn-clothing/",
+        "github": "https://github.com/YuiChen0207/crwn-clothing",
+				"image": "/crwn-clothing.png"
 			}
     ]
   },
@@ -56,7 +57,7 @@
   },
   "footer": {
 		"linkedin": "",
-		"twitter": "",
-		"github": ""
+		"twitter": "https://twitter.com/Yuichen0207",
+		"github": "https://github.com/YuiChen0207"
 	}
 }
