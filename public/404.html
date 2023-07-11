@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="refresh"
-      content="0; URL='https://YuiChen0207.github.io/Portfolio'"
-    />
-    <title>Portfolio 404 redirect</title>
+    <meta charset="utf-8" />
+    <title>Page Not Found</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // Redirect to index.html for client-side routing
+      const url = window.location.href;
+      const redirectUrl = url.endsWith('/') ? url : url + '/';
+      window.location.replace(redirectUrl);
+    </script>
+  </body>
 </html>

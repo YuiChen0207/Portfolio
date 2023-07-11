@@ -3,7 +3,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export default function Images() {
   return (
-    <div id="photos">
+    <div id="Photos">
       <h1 className="pt-12 uppercase font-bold text-center text-black text-bold text-4xl text-white">
         PHOTOS
       </h1>

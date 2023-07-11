@@ -27,7 +27,7 @@
   },
   "about": {
     "title": "About me",
-    "image": "/placeholder.png",
+    "image": "/profile.png",
     "primary": "This is where you can describe about yourself. The more you describe about yourself, the more chances you have!",
     "secondary": "Extra Information about you! like hobbies and your goals."
   },
