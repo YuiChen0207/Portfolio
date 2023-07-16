@@ -28,8 +28,8 @@
   "about": {
     "title": "About me",
     "image": "/profile.png",
-    "primary": "This is where you can describe about yourself. The more you describe about yourself, the more chances you have!",
-    "secondary": "Extra Information about you! like hobbies and your goals."
+    "primary": "I am a self-taught Front-End Developer.  I'm passionate about website architecture, design, and user experience, and I love creating beautiful, responsive, and user-friendly websites that make an impact. ",
+    "secondary": "My current skill set includes HTML, CSS, SCSS, JavaScript, React, Bootstrap, as well as some familiarity with Node.js and MongoDB.  I'm always looking for ways to improve my skills and stay up-to-date with the latest trends and best practices in frontend development."
   },
   "projects": {
     "title": "Projects",
@@ -47,6 +47,13 @@
 				"url": "https://yuichen0207.github.io/crwn-clothing/",
         "github": "https://github.com/YuiChen0207/crwn-clothing",
 				"image": "/crwn-clothing.png"
+			},
+      {
+				"title": "STAR-GUIDE",
+				"description": "Star Guide, is a restaurant search website that provides detailed information about restaurants. It allows users to search for restaurants based on keywords and categories. Additionally, users can subscribe to receive updates and information from the website by providing their email addresses.The project is built using Node.js, Handlebars, and Bootstrap.The project enhances the user experience by fetching restaurant images through an API and implementing pagination for displaying restaurants on multiple pages.",
+				"url": "https://star-guide.onrender.com/",
+        "github": "https://github.com/YuiChen0207/My-Restaurant-List",
+				"image": "/STAR-GUIDE.png"
 			}
     ]
   },

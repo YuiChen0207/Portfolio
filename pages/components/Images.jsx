@@ -3,24 +3,22 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export default function Images() {
   return (
-    <div id="Photos">
-      <h1 className="pt-12 uppercase font-bold text-center text-black text-bold text-4xl text-white">
-        PHOTOS
-      </h1>
-      <ImageList
-        className="my-20 mx-auto"
-        sx={{ width: 500, height: 450 }}
-        cols={3}
-        rowHeight={164}
-      >
+    <div id="Photos" className="my-20 mx-auto max-w-2xl">
+      <ImageList className="grid grid-cols-3 gap-4" cols={3} rowHeight={164}>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <image
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
+          <ImageListItem key={item.img} className="relative cursor-pointer">
+            <div className="w-full h-full overflow-hidden rounded-lg border-4 border-gray-300">
+              <image
+                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+                className="w-full h-full object-cover transform hover:scale-105 transition-all duration-300"
+              />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 py-2 px-4 text-white text-sm">
+              {item.title}
+            </div>
           </ImageListItem>
         ))}
       </ImageList>

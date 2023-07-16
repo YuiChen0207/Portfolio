@@ -5,28 +5,23 @@ import Image from "next/image";
 const About = () => {
   const about = config.about;
   return (
-    <div id="About" className="px-8 md:px-32 pb-32 content-center bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
-      <h1 className="pt-12 uppercase font-bold text-center text-white text-bold text-4xl">{about.title}</h1>
-      <div className="mt-16 flex flex-col md:flex-row align-center items-center">
-        <div className="w-1/2 flex justify-center content-center ">
+    <div id="About" className="px-8 md:px-32 py-16 bg-gray-100">
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-12">{about.title}</h1>
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="w-80 bg-gray-200 rounded-full shadow-lg mb-8 md:mb-0">
           <Image 
             src={about.image} 
             alt="about" 
-            className="shadow-lg rounded-[50%]" 
+            className="rounded-full"
+            layout="responsive" 
             width={300} 
             height={300}
-            />
+          />
         </div>
-        <div className="pt-8 md:py-0 md:w-1/2 text-white md:ml-4 text-center md:text-left">
-          <div className="about__primary">
-            <span>{about.primary}</span>
-          </div>
-          <div className="mt-6">
-            <span>{about.secondary}</span>
-          </div>
-          <div className="mt-6 mx-auto md:mx-0 border-2 border-white py-1 px-2 w-36 text-center font-bold">
-            <a href={'#'} className="about__resume text-white text-l">View Resume</a>
-          </div>
+        <div className="md:ml-16 text-gray-800">
+          <p className="text-lg mb-4">{about.primary}</p>
+          <p className="mb-6">{about.secondary}</p>
+          <a href="#" className="inline-block bg-gray-800 text-white py-2 px-4 rounded font-bold hover:bg-gray-700">View Resume</a>
         </div>
       </div>
     </div>
