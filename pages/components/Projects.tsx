@@ -1,13 +1,15 @@
 import React from "react";
 import config from "../index.json";
 import Image from "next/image";
-import { Typography, Button } from "@mui/material";
+import simpleTwitterImage from "../../public/simple-twitter.png";
+import crwnClothingImage from "../../public/crwn-clothing.png";
+import starGuideImage from "../../public/STAR-GUIDE.png";
 
 const Projects = () => {
   const projects = config.projects;
   return (
     <div id={projects.title} className="px-8 md:px-16 md:px-32 pb-16 bg-gray-100">
-      <h1 className="pt-12 uppercase font-bold text-center text-black text-bold text-4xl">
+      <h1 className="pt-12 uppercase font-bold text-center text-gray-800 text-bold text-4xl">
         {projects.title}
       </h1>
       <div className="projects__menu">
@@ -41,13 +43,33 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="lg:ml-12">
-                  <Image
-                    src={item.image}
-                    alt="project image"
-                    className="mt-6 md:mt-12 lg:mt-0 w-full rounded-lg"
-                    width={700}
-                    height={350}
-                  />
+                  {item.image === "simple-twitter.png" && (
+                    <Image
+                      src={simpleTwitterImage}
+                      alt="project image"
+                      className="mt-6 md:mt-12 lg:mt-0 w-full rounded-lg"
+                      width={700}
+                      height={350}
+                    />
+                  )}
+                  {item.image === "CRWN-clothing.png" && (
+                    <Image
+                      src={crwnClothingImage}
+                      alt="project image"
+                      className="mt-6 md:mt-12 lg:mt-0 w-full rounded-lg"
+                      width={700}
+                      height={350}
+                    />
+                  )}
+                  {item.image === "STAR-GUIDE.png" && (
+                    <Image
+                      src={starGuideImage}
+                      alt="project image"
+                      className="mt-6 md:mt-12 lg:mt-0 w-full rounded-lg"
+                      width={700}
+                      height={350}
+                    />
+                  )}
                 </div>
               </li>
             </>
